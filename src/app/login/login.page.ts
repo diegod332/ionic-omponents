@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-login',
@@ -20,10 +21,23 @@ export class LoginPage implements OnInit {
   
 
 }
-  login() {
+  login(form: NgForm) {
    //Si usuario=admin y password=admin
    //Entonces console.log('Login correcto')
     //Sino console.log('Login incorrecto')
+    
+    //obtener valores del formulario
+    console.log(form.value);
+
+    //validar formulario
+    console.log('valid' , form.valid);
+    //Si el formulario es inválido, entonces console.log('Todos los campos son requeridos')
+    //return
+
+    if (form.invalid) {
+      console.log('Todos los campos son requeridos');
+      return;
+    }
     if (this.email === 'admin' && this.password === 'admin') {
       console.log('Login correcto');
     }
@@ -31,6 +45,6 @@ export class LoginPage implements OnInit {
       console.log('Login incorrecto');
     }
 
-    
+
   }
 }
