@@ -1,0 +1,63 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Página de Uncharted</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/inicio"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <!-- Tarjetas (Cards) -->
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Uncharted</ion-card-title>
+      <ion-card-subtitle>Primera entrega</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      Una aventura épica de Nathan Drake en busca de El Dorado.
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Uncharted 2</ion-card-title>
+      <ion-card-subtitle>Entre ladrones</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      Continúa la saga con una búsqueda del legendario Valle de Shambhala.
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Uncharted 3</ion-card-title>
+      <ion-card-subtitle>La traición de Drake</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      Acompaña a Nathan Drake en una búsqueda que lo llevará al corazón del desierto.
+    </ion-card-content>
+  </ion-card>
+
+  <!-- Segmentos (Segment) -->
+  <ion-segment value="uncharted1">
+    <ion-segment-button value="uncharted1">
+      <ion-label>Uncharted</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="uncharted2">
+      <ion-label>Uncharted 2</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="uncharted3">
+      <ion-label>Uncharted 3</ion-label>
+    </ion-segment-button>
+  </ion-segment>
+
+  <!-- Botones (Buttons) -->
+  <ion-buttons slot="start">
+    <ion-back-button defaultHref="/inicio"></ion-back-button>
+  </ion-buttons>
+
+  <ion-button expand="full" color="primary" routerLink="/nueva-pagina">
+    Aprende más sobre Uncharted
+  </ion-button>
+</ion-content>

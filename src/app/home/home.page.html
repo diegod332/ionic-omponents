@@ -1,20 +1,40 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
+    <ion-title>Lista de Juegos GOTY</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+  <ion-list>
+    <ion-item routerLink="/pokemon">
+      <ion-label>Pokémon</ion-label>
+    </ion-item>
+    <ion-item routerLink="/gears-of-war">
+      <ion-label>Gears Of War</ion-label>
+    </ion-item>
+    <ion-item routerLink="/god-of-war">
+      <ion-label>God of War</ion-label>
+    </ion-item>
+    <ion-item routerLink="/halo">
+      <ion-label>Halo</ion-label>
+    </ion-item>
+    <ion-item routerLink="/dark-souls">
+      <ion-label>Dark Souls</ion-label>
+    </ion-item>
+    <ion-item routerLink="/uncharted">
+      <ion-label>Uncharted</ion-label>
+    </ion-item>
+    <ion-item routerLink="/red-dead-redemption">
+      <ion-label>Red Dead Redemption</ion-label>
+    </ion-item>
+    <ion-item routerLink="/super-mario-bros">
+      <ion-label>Super Mario Bros</ion-label>
+    </ion-item>
+    <ion-item routerLink="/cod">
+      <ion-label>Call of Duty</ion-label>
+    </ion-item>
+    <ion-item routerLink="/kof">
+      <ion-label>The King Of Fighters</ion-label>
+    </ion-item>
+  </ion-list>
 </ion-content>

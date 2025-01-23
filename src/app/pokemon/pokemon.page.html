@@ -1,0 +1,56 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Página de Pokémon</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/inicio"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item>
+      <ion-card>
+        <img src="assets/pokemon-yellow.jpg" alt="Pokémon Image 1" class="pokemon-image">
+        <ion-card-header>
+          <ion-card-title>Pokémon Yellow</ion-card-title>
+        </ion-card-header>
+      </ion-card>
+    </ion-item>
+
+    <ion-item>
+      <ion-card>
+        <img src="assets/pokemon-red.jpg" alt="Pokémon Image 2" class="pokemon-image2">
+        <ion-card-header>
+          <ion-card-title>Pokémon Red</ion-card-title>
+        </ion-card-header>
+      </ion-card>
+    </ion-item>
+
+    <ion-item>
+      <ion-card>
+        <img src="assets/pokemon-blue.jpg" alt="Pokémon Image 3" class="pokemon-image">
+        <ion-card-header>
+          <ion-card-title>Pokémon Blue</ion-card-title>
+        </ion-card-header>
+      </ion-card>
+    </ion-item>
+  </ion-list>
+
+  <ion-buttons slot="start">
+    <ion-back-button defaultHref="/inicio"></ion-back-button>
+  </ion-buttons>
+</ion-content>
+
+<style>
+  .pokemon-image {
+    width: 100%;  /* Ajusta el ancho a todo el card */
+    height: 200px;  /* Mantiene la proporción de la imagen */
+  }
+  
+    /* Ajusta el ancho a todo el card */
+  .pokemon-image2 {
+    width: 45%;
+    height: 250px;  /* Mantiene la proporción de la imagen */
+  }
+</style>
