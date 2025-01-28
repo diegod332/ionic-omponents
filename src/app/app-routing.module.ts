@@ -3,17 +3,17 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
-    path: 'inicio',
-    loadChildren: () => import('./home/home.module').then( m => m.HomeModule)
+    path: 'login',
+    loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
   },
   {
     path: '',
-    redirectTo: 'inicio',
+    redirectTo: 'login',
     pathMatch: 'full'
   },
   {
-    path: 'login',
-    loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
+    path: 'inicio',
+    loadChildren: () => import('./home/home.module').then( m => m.HomeModule)
   },
   {
     path: 'pokemon',
@@ -54,6 +54,10 @@ const routes: Routes = [
   {
     path: 'kof',
     loadChildren: () => import('./kof/kof.module').then( m => m.KofPageModule)
+  },
+  {
+    path: 'register',
+    loadChildren: () => import('./register/register.module').then( m => m.RegisterPageModule)
   },
 
 ];
